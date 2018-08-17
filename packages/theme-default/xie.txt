@@ -1,0 +1,12 @@
+npm uninstall -g element-theme
+
+
+�Ͱ汾
+--npm i element-theme@0.7.2 -g
+
+npm i element-theme-default
+
+
+et -i
+
+e
