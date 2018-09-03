@@ -128,8 +128,8 @@
 
 <script type="text/babel">
   import { formatDate, parseDate, getWeekNumber } from '../util';
-  import Locale from 'element-ui/src/mixins/locale';
-  import ElInput from 'element-ui/packages/input';
+  import Locale from 'wn-tech-ui/src/mixins/locale';
+  import ElInput from 'wn-tech-ui/packages/input';
   import TimePicker from './time';
   import YearTable from '../basic/year-table';
   import MonthTable from '../basic/month-table';

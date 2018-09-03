@@ -48,8 +48,8 @@
 </template>
 
 <script type="text/babel">
-  import Locale from 'element-ui/src/mixins/locale';
-  import { hasClass } from 'element-ui/src/utils/dom';
+  import Locale from 'wn-tech-ui/src/mixins/locale';
+  import { hasClass } from 'wn-tech-ui/src/utils/dom';
 
   export default {
     props: {

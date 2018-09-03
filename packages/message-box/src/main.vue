@@ -49,12 +49,12 @@
 </template>
 
 <script type="text/babel">
-  import Popup from 'element-ui/src/utils/popup';
-  import Locale from 'element-ui/src/mixins/locale';
-  import ElInput from 'element-ui/packages/input';
-  import ElButton from 'element-ui/packages/button';
-  import { addClass, removeClass } from 'element-ui/src/utils/dom';
-  import { t } from 'element-ui/src/locale';
+  import Popup from 'wn-tech-ui/src/utils/popup';
+  import Locale from 'wn-tech-ui/src/mixins/locale';
+  import ElInput from 'wn-tech-ui/packages/input';
+  import ElButton from 'wn-tech-ui/packages/button';
+  import { addClass, removeClass } from 'wn-tech-ui/src/utils/dom';
+  import { t } from 'wn-tech-ui/src/locale';
 
   let typeMap = {
     success: 'circle-check',

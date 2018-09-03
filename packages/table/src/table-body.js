@@ -1,7 +1,7 @@
 import { getCell, getColumnByCell, getRowIdentity } from './util';
-import { hasClass, addClass, removeClass } from 'element-ui/src/utils/dom';
-import ElCheckbox from 'element-ui/packages/checkbox';
-import ElTooltip from 'element-ui/packages/tooltip';
+import { hasClass, addClass, removeClass } from 'wn-tech-ui/src/utils/dom';
+import ElCheckbox from 'wn-tech-ui/packages/checkbox';
+import ElTooltip from 'wn-tech-ui/packages/tooltip';
 import debounce from 'throttle-debounce/debounce';
 
 export default {
@@ -110,16 +110,19 @@ export default {
       if (!el) return;
       const data = this.store.states.data;
       const rows = el.querySelectorAll('tbody > tr.el-table__row');
+      const rowsSelect = el.querySelectorAll('tbody > tr.el-table__row.current-row');
       const oldRow = rows[data.indexOf(oldVal)];
       const newRow = rows[data.indexOf(newVal)];
       if (oldRow) {
         removeClass(oldRow, 'current-row');
-      } else if (rows) {
-        [].forEach.call(rows, row => removeClass(row, 'current-row'));
+      } else if (rowsSelect) {
+        [].forEach.call(rowsSelect, row => removeClass(row, 'current-row'));
       }
+      
       if (newRow) {
         addClass(newRow, 'current-row');
       }
+     
     }
   },
 

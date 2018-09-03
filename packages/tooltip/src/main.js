@@ -1,6 +1,6 @@
-import Popper from 'element-ui/src/utils/vue-popper';
+import Popper from 'wn-tech-ui/src/utils/vue-popper';
 import debounce from 'throttle-debounce/debounce';
-import { getFirstComponentChild } from 'element-ui/src/utils/vdom';
+import { getFirstComponentChild } from 'wn-tech-ui/src/utils/vdom';
 import Vue from 'vue';
 
 export default {

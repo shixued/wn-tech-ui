@@ -56,9 +56,9 @@
   </div>
 </template>
 <script>
-  import emitter from 'element-ui/src/mixins/emitter';
+  import emitter from 'wn-tech-ui/src/mixins/emitter';
   import calcTextareaHeight from './calcTextareaHeight';
-  import merge from 'element-ui/src/utils/merge';
+  import merge from 'wn-tech-ui/src/utils/merge';
 
   export default {
     name: 'ElInput',

@@ -92,20 +92,20 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'element-ui/src/mixins/emitter';
-  import Locale from 'element-ui/src/mixins/locale';
-  import ElInput from 'element-ui/packages/input';
+  import Emitter from 'wn-tech-ui/src/mixins/emitter';
+  import Locale from 'wn-tech-ui/src/mixins/locale';
+  import ElInput from 'wn-tech-ui/packages/input';
   import ElSelectMenu from './select-dropdown.vue';
   import ElOption from './option.vue';
-  import ElTag from 'element-ui/packages/tag';
-  import ElScrollbar from 'element-ui/packages/scrollbar';
+  import ElTag from 'wn-tech-ui/packages/tag';
+  import ElScrollbar from 'wn-tech-ui/packages/scrollbar';
   import debounce from 'throttle-debounce/debounce';
-  import Clickoutside from 'element-ui/src/utils/clickoutside';
-  import { addClass, removeClass, hasClass } from 'element-ui/src/utils/dom';
-  import { addResizeListener, removeResizeListener } from 'element-ui/src/utils/resize-event';
-  import { t } from 'element-ui/src/locale';
-  import scrollIntoView from 'element-ui/src/utils/scroll-into-view';
-  import { getValueByPath } from 'element-ui/src/utils/util';
+  import Clickoutside from 'wn-tech-ui/src/utils/clickoutside';
+  import { addClass, removeClass, hasClass } from 'wn-tech-ui/src/utils/dom';
+  import { addResizeListener, removeResizeListener } from 'wn-tech-ui/src/utils/resize-event';
+  import { t } from 'wn-tech-ui/src/locale';
+  import scrollIntoView from 'wn-tech-ui/src/utils/scroll-into-view';
+  import { getValueByPath } from 'wn-tech-ui/src/utils/util';
 
   const sizeMap = {
     'large': 42,

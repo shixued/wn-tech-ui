@@ -16,8 +16,8 @@
 
 <script>
   import TreeStore from './model/tree-store';
-  import {t} from 'element-ui/src/locale';
-  import emitter from 'element-ui/src/mixins/emitter';
+  import {t} from 'wn-tech-ui/src/locale';
+  import emitter from 'wn-tech-ui/src/mixins/emitter';
 
   export default {
     name: 'ElTree',

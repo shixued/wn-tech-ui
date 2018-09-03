@@ -14,8 +14,8 @@
   </div>
 </template>
 <script>
-  import ElCollapseTransition from 'element-ui/src/transitions/collapse-transition';
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import ElCollapseTransition from 'wn-tech-ui/src/transitions/collapse-transition';
+  import Emitter from 'wn-tech-ui/src/mixins/emitter';
 
   export default {
     name: 'ElCollapseItem',

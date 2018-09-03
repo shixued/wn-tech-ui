@@ -46,10 +46,10 @@
 </template>
 
 <script>
-  import ElCheckboxGroup from 'element-ui/packages/checkbox-group';
-  import ElCheckbox from 'element-ui/packages/checkbox';
-  import ElInput from 'element-ui/packages/input';
-  import Locale from 'element-ui/src/mixins/locale';
+  import ElCheckboxGroup from 'wn-tech-ui/packages/checkbox-group';
+  import ElCheckbox from 'wn-tech-ui/packages/checkbox';
+  import ElInput from 'wn-tech-ui/packages/input';
+  import Locale from 'wn-tech-ui/src/mixins/locale';
 
   export default {
     mixins: [Locale],

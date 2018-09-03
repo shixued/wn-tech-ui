@@ -1,7 +1,7 @@
 import Pager from './pager.vue';
-import ElSelect from 'element-ui/packages/select';
-import ElOption from 'element-ui/packages/option';
-import Locale from 'element-ui/src/mixins/locale';
+import ElSelect from 'wn-tech-ui/packages/select';
+import ElOption from 'wn-tech-ui/packages/option';
+import Locale from 'wn-tech-ui/src/mixins/locale';
 
 export default {
   name: 'ElPagination',
@@ -62,7 +62,8 @@ export default {
     if (this.small) {
       template.data.class += ' el-pagination--small';
     }
-
+    template.children = template.children || [];
+    rightWrapper.children = rightWrapper.children || [];
     components.forEach(compo => {
       if (compo === '->') {
         haveRightWrapper = true;

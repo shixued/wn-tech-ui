@@ -23,8 +23,8 @@
 </template>
 <script>
   import Menu from './menu-mixin';
-  import ElTooltip from 'element-ui/packages/tooltip';
-  import Emitter from 'element-ui/src/mixins/emitter';
+  import ElTooltip from 'wn-tech-ui/packages/tooltip';
+  import Emitter from 'wn-tech-ui/src/mixins/emitter';
 
   export default {
     name: 'ElMenuItem',

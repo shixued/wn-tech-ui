@@ -6,10 +6,10 @@ npm-debug.log.*
 lerna-debug.log.*
 lib
 .idea
-examples/element-ui
+examples/wn-tech-ui
 examples/pages/en-US
 examples/pages/zh-CN
-fe.element/element-ui
+fe.element/wn-tech-ui
 .npmrc
 coverage
 waiter.config.js
