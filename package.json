@@ -34,18 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "git@github.com:shixued/wn-tech-ui.git"
   },
-  "homepage": "http://element.eleme.io",
   "keywords": [
     "eleme",
     "vue",
     "components"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElemeFE/element/issues"
-  },
   "unpkg": "lib/index.js",
   "style": "lib/theme-default/index.css",
   "dependencies": {
