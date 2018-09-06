@@ -42,7 +42,7 @@ Typical configurations for these config files are:
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "element-ui": "legacy",
+    "wn-tech-ui": "legacy",
     "vue": "2.5.2"
   },
   "devDependencies": {
@@ -136,8 +136,8 @@ You can import Element entirely, or just import what you need. Let's start with 
 In main.js:
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+import ElementUI from 'wn-tech-ui'
+import 'wn-tech-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
 Vue.use(ElementUI)
@@ -167,7 +167,7 @@ Then edit .babelrc:
   ],
   "plugins": [["component", [
     {
-      "libraryName": "element-ui",
+      "libraryName": "wn-tech-ui",
       "styleLibraryName": "theme-default"
     }
   ]]]
@@ -178,7 +178,7 @@ Next, if you need Button and Select, edit main.js:
 
 ```javascript
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Button, Select } from 'wn-tech-ui'
 import App from './App.vue'
 
 Vue.component(Button.name, Button)
@@ -261,7 +261,7 @@ import {
   MessageBox,
   Message,
   Notification
-} from 'element-ui'
+} from 'wn-tech-ui'
 
 Vue.use(Pagination)
 Vue.use(Dialog)

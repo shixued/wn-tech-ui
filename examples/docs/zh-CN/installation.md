@@ -8,21 +8,21 @@
 :::
 
 ```shell
-npm i element-ui@legacy -S
+npm i wn-tech-ui@legacy -S
 ```
 
 ### CDN
-目前可以通过 [unpkg.com/element-ui](https://unpkg.com/element-ui@1.4/) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
+目前可以通过 [unpkg.com/wn-tech-ui](https://unpkg.com/wn-tech-ui@1.4/) 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
 
 ```html
 <!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/element-ui@1.4/lib/theme-default/index.css">
+<link rel="stylesheet" href="https://unpkg.com/wn-tech-ui@1.4/lib/theme-default/index.css">
 <!-- 引入组件库 -->
-<script src="https://unpkg.com/element-ui@1.4/lib/index.js"></script>
+<script src="https://unpkg.com/wn-tech-ui@1.4/lib/index.js"></script>
 ```
 
 :::tip
-我们建议使用 CDN 引入 Element 的用户在链接地址上锁定版本，以免将来 Element 升级时受到非兼容性更新的影响。例如，如需锁定版本为 1.4.8，则 CSS 和 JavaScript 文件的地址分别是 `https://unpkg.com/element-ui@1.4.8/lib/theme-default/index.css` 和 `https://unpkg.com/element-ui@1.4.8/lib/index.js`。
+我们建议使用 CDN 引入 Element 的用户在链接地址上锁定版本，以免将来 Element 升级时受到非兼容性更新的影响。例如，如需锁定版本为 1.4.8，则 CSS 和 JavaScript 文件的地址分别是 `https://unpkg.com/wn-tech-ui@1.4.8/lib/theme-default/index.css` 和 `https://unpkg.com/wn-tech-ui@1.4.8/lib/index.js`。
 :::
 
 ### Hello world
@@ -34,7 +34,7 @@ npm i element-ui@legacy -S
 <head>
   <meta charset="UTF-8">
   <!-- 引入样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui@1.4/lib/theme-default/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/wn-tech-ui@1.4/lib/theme-default/index.css">
 </head>
 <body>
   <div id="app">
@@ -47,7 +47,7 @@ npm i element-ui@legacy -S
   <!-- 先引入 Vue -->
   <script src="https://unpkg.com/vue@2.5/dist/vue.js"></script>
   <!-- 引入组件库 -->
-  <script src="https://unpkg.com/element-ui@1.4/lib/index.js"></script>
+  <script src="https://unpkg.com/wn-tech-ui@1.4/lib/index.js"></script>
   <script>
     new Vue({
       el: '#app',
