@@ -497,8 +497,8 @@
           let input = [].filter.call(inputChildNodes, item => item.tagName === 'INPUT')[0];
           const tags = this.$refs.tags;
           input.style.height = this.selected.length === 0
-            ? (sizeMap[this.size] || 36) + 'px'
-            : Math.max(tags ? (tags.clientHeight + 6) : 0, sizeMap[this.size] || 36) + 'px';
+            ? (sizeMap[this.size] || 26) + 'px'
+            : Math.max(tags ? (tags.clientHeight + 6) : 0, sizeMap[this.size] || 26) + 'px';
           if (this.visible && this.emptyText !== false) {
             this.broadcast('ElSelectDropdown', 'updatePopper');
           }
@@ -603,8 +603,27 @@
       },
 
       selectOption() {
-        if (this.options[this.hoverIndex]) {
-          this.handleOptionSelect(this.options[this.hoverIndex]);
+        // if (this.options[this.hoverIndex]) {
+        //   this.handleOptionSelect(this.options[this.hoverIndex]);
+        // }
+        let flag = 0;
+        let hoverIndex = 0;
+        for (let i = this.options.length - 1; i >= 0; i--) {
+          if (this.options[i].visible) {
+            hoverIndex = i;
+            flag += 1;
+          }
+        };
+        if (!this.visible) {
+          this.toggleMenu();
+        } else {
+          if (this.options[this.hoverIndex]) {
+            this.handleOptionSelect(this.options[this.hoverIndex]);
+          }
+          if (this.filteredOptionsCount === 1 && flag === 1) {
+            this.hoverIndex = hoverIndex;
+            this.handleOptionSelect(this.options[this.hoverIndex]);
+          }
         }
       },
 

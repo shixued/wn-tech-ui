@@ -30,6 +30,18 @@
       value: {
         required: true
       },
+      filterList:{  //自定义的过滤字段--雷健雄添加（2018/06/21）
+        type:Array,
+        default(){
+          return ['NAME','CODE','MEMCODE1','MEMCODE2'];
+        }
+      },
+      item:{
+        type:Object,
+        default(){
+          return {};
+        }
+      },
       label: [String, Number],
       created: Boolean,
       disabled: {
@@ -134,9 +146,19 @@
       },
 
       queryChange(query) {
+        query = query.toLowerCase();
         // query 里如果有正则中的特殊字符，需要先将这些字符转义
         let parsedQuery = String(query).replace(/(\^|\(|\)|\[|\]|\$|\*|\+|\.|\?|\\|\{|\}|\|)/g, '\\$1');
-        this.visible = new RegExp(parsedQuery, 'i').test(this.currentLabel) || this.created;
+        // 去过滤列表中进行筛选过滤
+        let meetd = this.filterList.some(key=>{
+          if(this.item[key]){
+            return new RegExp(parsedQuery, 'i').test(this.item[key].toLowerCase());
+          }else{
+            return false;
+          }
+        });
+        this.visible = meetd || this.created;
+        // this.visible = new RegExp(parsedQuery, 'i').test(this.currentLabel) || this.created;
         if (!this.visible) {
           this.parent.filteredOptionsCount--;
         }
